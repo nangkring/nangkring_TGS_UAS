@@ -1,0 +1,292 @@
+/* RESET */
+html,body,div,span,applet,abject,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,
+label,legend,tanble,caption,tbody,tfoot,thead,tr,th,td{
+margin:0; padding:0; outline:0; font-size:100%;
+vertical-align:baseline; background:transparent;
+height:auto; border-top-width:0; border-bottom-width:0;
+border-left-width:0;
+}
+blockquote:before, blockquote:after, q:before,q:after{
+content:none;
+}
+blockquote,q{quotes:none;}
+:focus {outline:0;}
+.clear {clear: both; display:block;height:1px;overflow:hidden;margin:0;padding:0;}
+ins {text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+ol,ul{list-style:none;}
+body{background-color:#ffffff; background-position:center center;}
+/*RESET*/
+
+*{
+	padding:0px;
+	margin:0px;	
+}
+
+#header{
+	width:100%;
+	height:90px;
+	background-color:#297CCF; /*#25343F*/
+}
+#header img{
+	margin-top:10px;
+}
+#content{
+	width:100%;
+	height:800px;
+	background-color:#297CCF;
+}
+#login{
+	float:left;
+	/* background-color:orange; */
+	height:800px;
+	width:50%;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	border: 1px solid #c0c0c0;
+	margin: 0 0.2em 0 0; /*ukuran margin(samping) radio dan checkbox*/
+	padding: 0;
+	font-size: 16px;
+	line-height: 1em;
+	width: 1.25em;	/*ukuran lebar checkbox dan radio*/
+	height: 1.25em; /*ukuran tinggi checkbox dan radio*/
+	background: #fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#fbfbfb));
+
+	-webkit-appearance: none;
+	-webkit-box-shadow: 1px 1px 1px #fff;
+	-webkit-border-radius: 0.25em;
+	vertical-align: text-top;
+	display: inline-block;
+}
+
+input[type=radio] {
+	-webkit-border-radius: 2em; /* Membuat Radio bundar */
+}
+
+input[type=checkbox]:checked::after {
+	content:"\2713"; /*tanda centang*/
+	display:block;
+	text-align: center;
+	font-size: 16px;
+	height: 16px;
+	line-height: 18px;
+}
+
+input[type=radio]:checked::after {
+	content:"\2022"; /*tanda bunder*/
+	display:block;
+	height: 16px;
+	line-height: 19px;
+	font-size: 40px;
+	text-align: center;
+}
+
+select {
+	border: 1px solid #D0D0D0;
+	background: url(http://www.quilor.com/i/select.png) no-repeat right center, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbfbfb), to(#ededed));
+	background: -moz-linear-gradient(19% 75% 90deg,#ededed, #fbfbfb);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	color: #444;
+}
+
+.formSignIn{ /*membuat box untuk form*/
+	position: relative;
+	margin: 78px auto;
+	margin-right:250px;
+	margin-bottom:20px;
+	padding: 15px 15px 15px;
+	width: 310px;
+	background: white;
+	border-radius: 7px; /*membuat sudut Lengkuk*/
+	-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.formSignUp{ /*membuat box untuk form*/
+	position: relative;
+	margin: 20px auto;
+	margin-right:250px;
+	padding: 15px 15px 15px;
+	width: 310px;
+	background: white;
+	border-radius: 7px;
+	-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.formSign:before, .formSignUp:before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	bottom: -8px;
+	left: -8px;
+	z-index: -1;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+}
+
+.formSignIn p, .formSignUp p {
+	margin: 14px 0 0; /*memberi jarak dari atas paragraf*/
+}
+
+.formSignIn p:first-child, .formSignUp p:first-child  { /*untuk jarak dari atas p yang pertama*/
+	margin-top: 0;
+}
+
+.formSignIn input[type=text], .formSignIn input[type=password], .formSignUp input[type=text], .formSignUp input[type=password] {
+	width: 278px; /*lebar form*/
+}
+
+.formSignIn p.Keep_me {
+	float: left;
+	line-height: 31px;
+}
+
+.formSignIn p.Keep_me label {
+	font-size: 12px;
+	font-family:Futura Md BT;
+	cursor: pointer;
+}
+
+.formSignIn p.Keep_me input {
+	position: relative;
+	bottom: 1px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+.formSignIn p.submit, .formSignUp p.submit {
+	text-align: right;
+}
+
+.formSignIn p.Keep_me a{
+	color: #cce7fa;
+	text-decoration: none;
+	margin-left:5px;
+}
+
+.formSignIn p.Keep_me a:hover{
+	text-decoration: underline;
+}
+
+:-moz-placeholder {
+	color: #c9c9c9 !important;
+	font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+	color: #ccc;
+	font-size: 13px;
+}
+
+input[type=text], input[type=password], input[type=date] { /*memberi bayangan di form input*/
+	margin: 2px;
+	padding: 0 10px;
+	width: 200px;
+	height: 30px;
+	color: #404040;
+	background: white;
+	border: 1px solid;
+	border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+	/* border-radius: 3px; */
+	outline: 5px solid #eff4f7;
+	outline-radius:15px;
+	-moz-outline-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=text]:focus, input[type=password]:focus { /*outline atau border bercahaya*/
+	border-color:#7dc9e2;
+	outline-color: #dceefc;
+	outline-offset:0;
+}
+
+input[type=submit] {
+	padding: 0 18px;
+	height: 29px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #527881;
+	text-shadow: 0 1px #e3f1f1;
+	background: #cde5ef;
+	border: 1px solid;
+	border-color: #b4ccce #b3c0c8 #9eb9c2;
+	border-radius: 7px;
+	outline: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	background-image: -webkit-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: -moz-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: -o-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: linear-gradient(to bottom, #edf5f8, #cde5ef);
+	-webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+input[type=submit]:active {
+	background: #cde5ef;
+	border-color: #9eb9c2 #b3c0c8 #b4ccce;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+	line-height: 34px;
+}
+
+.radioKu label{
+	margin-right:20px;
+	font-family:Futura Md BT;
+	font-size:12px;
+}
+
+#sekilas{
+	float:right;
+	/* background-color:yellow; */
+	height:800px;
+	width:50%;
+}
+
+#pengantar p:first-child{
+	font-size:40px;
+	margin-top:78px;
+}
+
+#pengantar p{
+	color:white;
+	font-family:Footlight MT Light;
+	font-size:28px;
+	margin-top:20px;
+	margin-left:70px;
+	width:500px;
+}
+
+#footer{
+	width:100%;
+	height:100px;
+	background-color:#297CCF;
+}
+#footer h4{
+	color: white;
+}
+#altnav{
+	margin-top:20px;
+}
+#altnav a{
+	padding:10px;
+	margin-right:7px;
+	text-decoration:none;
+	color:white;
+}

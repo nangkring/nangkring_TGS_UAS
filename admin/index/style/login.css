@@ -1,0 +1,106 @@
+html{
+    background: #25343F;
+    color:#fff; /*font tulisan*/
+    font-family: trado;
+}
+body{
+    width: 350px;
+    height: auto;
+    margin:auto; /*agar seluruh content form berada di tengah*/
+}
+.wrap{
+    width:350px;
+    height: auto;
+    float:left;
+    background: #F9F9F9;
+    margin-top:150px; /*jarak dengan posisi paling atas sehingga posisi di tangah*/
+    border-radius:5px;
+    box-shadow: 0px 0px 5px #000;
+    border:1px solid #DBDCD6;
+}
+.wrap .head{ /*memberi style pada head Login Administrator*/
+    width:330px;
+    height: auto;
+    padding: 10px;
+    font-size: 19px;
+    color:#333;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #DBDCD6; /*membuat garis di bawah head dengan warna abu2*/
+}
+.wrap .form{ /*membuat form berada pada posisi tengah*/
+    width:330px;
+    height: auto;
+    padding:20px 10px;
+    float: left;
+    text-align: center;
+}
+.wrap .form form{ /*memberi warna font username dan password*/
+    margin:0;
+    color:#555;
+    font-weight: bold;
+}
+.wrap .form input[type="text"],.wrap .form input[type="password"]{
+    /*membarikan style pada form input*/
+    width: 300px;
+    height: auto;
+    padding:10px;
+    border:1px solid #ccc;
+    text-align: center;
+    background: #fff;
+    box-shadow:inset 0px 3px 5px #CBCCC4; /*membuat bayangan pada bagian atas*/
+    border-radius:5px;
+}
+.wrap .form input[type="text"]:focus,.wrap .form input[type="password"]:focus{
+    /*form input ketika dipilih atau sedang focus*/
+    width: 300px;
+    height: auto;
+    padding:10px;
+    border:1px solid #BCBCBC;
+    text-align: center;
+    outline: none;
+    box-shadow:inset 0px 3px 5px #999C8B;
+    background: #fff;
+}
+.wrap .form input[type="submit"]{
+    /*memberi style pada tombol*/
+    margin-top: 5px;
+    padding: 0 18px;
+    height: 29px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #527881;
+    text-shadow: 0 1px #e3f1f1;
+    background: #cde5ef;
+    border: 1px solid;
+    border-color: #b4ccce #b3c0c8 #9eb9c2;
+    border-radius: 7px;
+    outline: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background-image: -webkit-linear-gradient(top, #edf5f8, #cde5ef);
+    background-image: -moz-linear-gradient(top, #edf5f8, #cde5ef);
+    background-image: -o-linear-gradient(top, #edf5f8, #cde5ef);
+    background-image: linear-gradient(to bottom, #edf5f8, #cde5ef);
+    -webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.wrap .form input[type="submit"]:hover{
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.wrap .footer{
+    width:330px;
+    height: auto;
+    padding:8px 10px;
+    font-size: 11px;
+    color:#333;
+    float: left;
+    background: #EFF0EC;
+    text-align: center;
+    border-top: 1px solid #fff;
+}

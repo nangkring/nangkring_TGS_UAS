@@ -1,0 +1,5 @@
+istilah unknown
+1. border radius
+2. webkit shadow
+3. box shadow
+4. position

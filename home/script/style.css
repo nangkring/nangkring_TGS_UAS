@@ -1,0 +1,332 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:calibri, "segoe ui", arial, tahoma, sans-serif;
+}
+html{
+	background-color: #E5E5E8;
+}
+body{
+	background-color:#E5E5E8; /*#dddddd*/
+}
+#header{
+	bottom: auto;
+	position: fixed;
+	top: 0; 
+	z-index: 100; /*dari baris atas sampai sini agar head tetap diposisinya*/
+	height:65px;
+	width:100%;
+	margin:0 auto;
+	background-color: #297CCF /*#2E8AE6*/ /*#25343F*/;
+	overflow:hidden;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px; 
+}
+
+#search input[type="text"] {
+	/*background: url(images/Search.png) no-repeat 10px 6px #f4f4f4;*/
+	border: 0 none;
+	font: bold 12px Arial,Helvetica,Sans-serif;
+	color: #bbbbbb;
+	width: 150px;
+	padding: 6px 15px 6px 35px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+#s::-webkit-input-placeholder, #s:-moz-placeholder {
+    color: #607078;
+}
+
+#search input[type="text"]:focus {
+	width: 185px;
+}
+#search input[type="submit"]{
+	width: 20px;
+	height: 17px;
+}
+.menu-utama{
+	/*margin-top:3px;*/
+	list-style:none;
+}
+.menu-utama li{
+	float:left;
+	height: 90px;
+	padding: 8px;
+	padding-top:20px;
+	margin-top: 0px;
+}
+.menu-utama a li{
+	color:#ffffff;
+	text-decoration:none;
+}
+.menu-utama li:hover{ /*menampilkan sublevel ketika di sorot*/
+	background: orange;
+	height: 90px;
+	display: block;
+}
+
+/*#header form input{*/
+.cari{
+	float: right;
+	margin-right: 70px;
+	border:none;
+	margin-top: 17px;
+	height:25px;
+	padding-left: 5px;
+}
+#header img{float: left; margin-left: 20px;margin-right: 10px; height: 40px; width;40px; margin-top:10px;}
+#wrapper{
+	width:870px;
+	min-height: 550px; /*tinggi minimal dari wrapper, sedengkan tinggi maksimal mengikuti content*/
+	margin:80px auto;
+	overflow:hidden;
+	/* background:red; */
+}
+#daftar-artikel{
+	width:630px;
+	float:left;
+	padding-bottom: 40px;
+	background-color:  white;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+	border-radius: 1px;
+}
+
+/*Iki style thread*/
+.artikel{
+	/*background:#ffffff;*/
+	padding:10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom:20px;
+	overflow:hidden;
+	outline: solid 1px #999;
+}
+.artikel:first-child{
+	margin-top: 5px;
+}
+.artikel img{
+	float:left;
+	margin-right:10px;
+	width:200px;
+	height:165px;
+}
+.artikel b{
+	color:#616060;
+	background:#dddddd;
+	padding:3px;
+	font-size:12px;
+	font-weight:bold;
+	margin-right:10px;
+}
+
+.artikel p{
+	margin:10px;
+}
+.artikel textarea{
+	resize: none;
+	width: 600px;
+	height:135px;
+	border:1px solid #999; 
+}
+/*iki akhir style thread*/
+
+#postingan{
+	width:630px;
+	float:left;
+	padding: 5px;
+	padding-bottom: 40px;
+	background-color:  white;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+	border-radius: 1px;
+}
+#postingan input{margin-top: 8px;}
+#postingan select{margin-top: 7px;}
+#postingan textarea{
+	margin-top:7px;
+	float: left;
+	resize: none;
+	width: 625px;
+	height:150px;
+}
+#postingan img{
+	outline: solid 1px #999;
+	margin-left: 2px;
+}
+.submit{
+	float: left;
+	margin-right: 10px;
+} /*Iki bar style thread*/
+
+input[type=submit], input[type=reset] {
+	padding: 0 18px;
+	height: 29px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #527881;
+	text-shadow: 0 1px #e3f1f1;
+	background: #cde5ef;
+	border: 1px solid;
+	border-color: #b4ccce #b3c0c8 #9eb9c2;
+	border-radius: 7px;
+	outline: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	background-image: -webkit-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: -moz-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: -o-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: linear-gradient(to bottom, #edf5f8, #cde5ef);
+	-webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+input[type=submit]:active {
+	background: #cde5ef;
+	border-color: #9eb9c2 #b3c0c8 #b4ccce;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#dThread{
+	float: left;
+	width: 630px;
+	padding: 5px;
+	padding-bottom: 40px;
+	background-color:  white;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+	border-radius: 1px;
+}
+#dThread table{margin:0 auto;width:625px;border-collapse:collapse;background:#ecf3eb;}
+#dThread th, td{border:1px solid #999;}
+/*#dThread th, tr:first-child{padding:8px 0;background: #2672ec;} /*membuat table bagian atas sendiri berwarna biru*/
+#dThread th{padding:4px 8px;background: #297CCF; color: white;}
+#dThread td{padding:4px 8px;}
+#dThread a{text-decoration: none; color: black;}
+#dThread a:hover{text-decoration: underline; color: black;}
+#sidebar{
+	width:200px;
+	float:right;
+	background-color: white;
+	padding: 7px;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+	border-radius: 1px;
+	margin-left: 5px;
+}
+#sidebar p{
+	line-height:20px;
+	color:#636363;
+}
+#sidebar ul{
+	/*margin-left:10px;*/
+	list-style: none;
+}
+#sidebar img{outline: solid 1px #999; margin-top: 5px;}
+#sidebar ul li a{
+	color:#636363;
+	text-decoration:none;
+}
+#sidebar ul li a:hover{
+	color:#636363;
+	text-decoration:underline;
+}
+#footer{
+	/*clear:both;*/
+	width: 100%;
+	height: 110px;
+	text-align:center;
+	background-color: #297CCF;
+	padding:5px;
+	margin-bottom: 0px;
+	color:#555555;
+}
+#altnav{
+	margin-top:20px;
+}
+#altnav a{
+	padding:10px;
+	margin-right:7px;
+	text-decoration:none;
+	color:white;
+}
+#tabelKu td{
+	border: none;
+}
+
+/* tambahan style untuk tentang pembuat nangkring */
+
+.nebulan img{
+	margin-top:60px;
+	margin-bottom: 60px;
+	border:5px solid #ffcc66;
+}
+.sky {
+	color:#FFFFFF;
+	width: 200px;
+	height: 70px;
+	background-color:#0000CD;
+	margin-top:25px;
+	margin-left:10px;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+}
+.sky2 {
+	color:#FFFFFF;
+	width: 200px;
+	height: 70px;
+	background-color:#800000;
+	margin-top:40px;
+	margin-left:145px;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+}
+.sky3{
+	color:#FFFFFF;
+	width: 200px;
+	height: 70px;
+	background-color:#800080;
+	margin-top:40px;
+	margin-left:275px;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+}
+.sky4 {
+	color:#FFFFFF;
+	width: 200px;
+	height: 70px;
+	background-color:#ffcc66;
+	margin-top:40px;
+	margin-left:400px;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+}
+.skyblue{
+	margin-top:160px;
+	margin-left:116px;
+	margin-bottom:120px;
+	width: 400px;
+	color: white;
+	background-color:#A6A6A5;
+	-webkit-box-shadow: #666 1px 1px 2px; /*membuat bayangan pada header pada bagian bawah*/
+	-moz-box-shadow: #666 1px 1px 2px;
+	box-shadow: #666 1px 1px 2px;
+}
+
